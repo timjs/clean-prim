@@ -1,0 +1,4 @@
+rule clean
+    command = clm -h 209715200 -I Sources/ $$(basename -s .icl $in) -o $out
+
+build main: clean Sources/Main.icl
